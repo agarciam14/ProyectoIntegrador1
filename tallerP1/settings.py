@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'tallerP1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'p1-eafit-db',                     
+        'USER': 'agarciam',                     
+        'PASSWORD': 'p1-1001618075',                  
+        'HOST': 'p1-eafit-db.mysql.database.azure.com',                     
+        'PORT': '3306',
     }
 }
 
