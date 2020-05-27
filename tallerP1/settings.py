@@ -25,7 +25,7 @@ SECRET_KEY = '_2bud12v0f%q1a%k&ppn=hsur#9((iv5a2$214cpm%7g^dv=o7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,11 +78,9 @@ WSGI_APPLICATION = 'tallerP1.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'p1-eafit-db',                     
-        'USER': 'agarciam',                     
-        'PASSWORD': 'p1-1001618075',                  
-        'HOST': 'p1-eafit-db.mysql.database.azure.com',                     
-        'PORT': '3306',
+        'NAME': 'p1-eafit-db',
+        'USER': 'root',
+        'PASSWORD': 'Agarciam',
     }
 }
 
